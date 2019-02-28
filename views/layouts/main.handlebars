@@ -5,16 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>New Scaper</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <span class="navbar-brand">Mongo News Scraper</span>
-        <a href="/scrape" class="nav-link" id="callScrape" >Scrape For New News</a>
-        <a href="/" class="nav-link">Saved News</a>
-    </nav>
+<section class="bgimage">
+  <div class="container-fluid" style="background-image: url(https://images.pexels.com/photos/273204/pexels-photo-273204.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500); width: 100%; height: 500px; background-repeat: no-repeat; background-position: center; background-size:cover; background-attachment: fixed;">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div style="position: relative; border: 5px white solid; text-align: center; bottom: -125px;">
+        <h3 style="font-size: 60px; color: white; font-weight: 700px;">Austin, Texas</h3>
+        <p style="color: white;">Scrape For The Latest 512 News</p>
+        <p><a href="/scrape" id="callScrape" class="btn btn-primary btn-large">Scrape News</a></p>
+        </div>
+        <br>
+        <br>
+        <div style ="position: relative; text-align: center; bottom: -125px;">
+        <a href="/" class="btn btn-danger btn-large">Saved News</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <footer>
+        
+    </footer>
     {{{body}}}
     <script src="/js/app.js"></script>
 </body>
