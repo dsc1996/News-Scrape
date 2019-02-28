@@ -59,13 +59,16 @@ module.exports = function(app,axios,cheerio,db){
             var $ = cheerio.load(response.data);
 
             newsObject = [];
-            $("article h2").each(function(i, element) {
+            $("h5").each(function(i, element) {
                 var result = {};
 
                 result.title = $(this)
                     .children("a")
                     .text();
                 result.link = $(this)
+                    .children("a")
+                    .attr("href");
+                result.img = $(this)
                     .children("a")
                     .attr("href");
                 newsObject.push(result);

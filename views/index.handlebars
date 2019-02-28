@@ -2,8 +2,8 @@
     {{#each article}}
         <article class="card" style="width: 30rem;">
             <div class="note" id="{{_id}}">
-                <a href="/note/{{_id}}" class="card-link" >Add Note</a><!-- open a note prompt-->
-                <a href="/delete/{{_id}}" class="card-link">Delete Article</a>
+                <a href="/addNoteForm/{{_id}}" class="addNote" >Add Note</a><!-- open a note prompt-->
+                <a href="/deleteArticle/{{_id}}" class="card-link">Delete Article</a>
                 <p>{{title}}</p>
                 <a href="{{link}}" class="card-link">link</a>
             </div>
